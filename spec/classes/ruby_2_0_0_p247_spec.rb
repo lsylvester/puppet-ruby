@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'ruby::2_0_0_p0' do
+describe 'ruby::2_0_0_p247' do
   let(:facts) do
     {
       :boxen_home => '/opt/boxen',
@@ -10,6 +10,6 @@ describe 'ruby::2_0_0_p0' do
   it do
     should include_class("openssl")
 
-    should contain_ruby__version('2.0.0-p0')
+    should contain_ruby__version('2.0.0-p247')
   end
 end
